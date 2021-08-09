@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Toko Sepatu</title>
+</head>
+<style>
+    .icon {
+        position: absolute;
+        top: 48%;
+        padding-left: 2%;
+        transform: translate(-50%, -50%);
+        display: block;
+        font-size: 25px;
+    }
+
+    .carousel .carousel-item {
+        height: 500px;
+    }
+
+    .carousel-item img {
+        
+        object-fit: cover ;
+        max-height: 500px;
+    }
+</style>
+
+<!-- {{-- <script src="{{ asset('js/app.js') }}"></script> --}} -->
+
+<body>
+    <div class="bg-white border-bottom" style="height: 6em;">
+        <div class="container ">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid">
+                    <b><a class="navbar-brand text-primary" href="#">TOKO SEPATU</a></b>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <form class="d-flex w-50">
+                        <input class="form-control me-2 mx-3" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    <div class="float-right">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item ">
+                                    <a class="nav-link my-auto mr-4" style="font-size: 24px;" href="#"><i
+                                            class="bi bi-person"></i></a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link my-auto" style="font-size: 24px;" href="#"><b><i
+                                                class="bi bi-suit-heart"></i></b></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link my-auto" style="font-size: 24px;" href="#"><i
+                                            class="bi bi-cart4"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <b>
+                                        <p class="text-dart mt-3">
+                                            Saldo
+                                        </p>
+                                    </b>
+                                    <p class="text-danger mt-n4" style="font-size: 12px;">
+                                        Rp. 1.590.000
+                                    </p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="bg-light border-bottom ">
+        <div class="container">
+            <center>
+                <div class="row py-2">
+
+                    <div class="col my-auto">
+                        <b><a class=" link-dark" style="text-decoration: none;" href="#">
+                                <i class="bi bi-lightning" style="color: #FFE65B"></i>Penawaran Hari Ini</a></b>
+                    </div>
+                    <div class="col my-auto">
+                        <b><a class=" link-dark" style="text-decoration: none;" href="#">
+                                <i class="bi bi-tag"></i>Harga Spesial</a></b>
+                    </div>
+                    <div class="col my-auto">
+                        <b>
+                            <div class="dropdown ">
+                                <a class=" dropdown-toggle link-dark" style="text-decoration: none;" href="#"
+                                    id="runningShoesDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Sepatu Lari
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="runningShoesDropdown">
+                                    <li><a class="dropdown-item text-dark" href="#">Ringan</a></li>
+                                    <li><a class="dropdown-item text-dark" href="#">Jarak Jauh</a></li>
+                                    <li><a class="dropdown-item text-dark" href="#">Stabilitas</a></li>
+                                </ul>
+                            </div>
+                        </b>
+                    </div>
+
+                    <div class="col col-sm-4 my-auto float-right ">
+                        <b><a class="link-danger" style="text-decoration: none;" href="#">
+                                <i class="bi bi-award"></i>Hot</a></b>
+                    </div>
+                </div>
+            </center>
+        </div>
+    </div>
+    <!-- caoursel -->
+    <div id="carouselExampleDark" class="carousel carousel-fade slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="images/c1.jpg"
+                    class="d-block img-fluid w-100 ratio ratio-16x9" height="25%" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/c2.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/c3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-dark">Third slide label</h5>
+                    <p class="text-dark">Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

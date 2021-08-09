@@ -1,0 +1,42 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: "Poppins", sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+//margin 
+$enable-negative-margins: true;
+// Colors
+
+$primary: #34a838;
+$secondary: #f4f4f4;
+$success: #2e7530;
+$info: #ffc642;
+$warning: #ffc642;
+$danger: #fa6952;
+$light: #f4f4f4;
+$dark: #3b3d3e;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+);
+
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #8effbd;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
